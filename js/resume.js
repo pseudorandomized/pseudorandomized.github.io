@@ -24,5 +24,5 @@
   $('body').scrollspy({
     target: '#sideNav'
   });
-
+  $('[data-toggle="popover"]').popover();  
 })(jQuery); // End of use strict
