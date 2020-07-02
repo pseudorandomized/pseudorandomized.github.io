@@ -191,3 +191,28 @@ a:hover, a:focus, a:active {
 .popover{
     max-width: 100%; /* Max Width of the popover (depending on the container!) */
 }
+
+
+/* Preloader */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #d7d7d7;
+  z-index: 99;
+}
+
+#status {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  /* background-image: url("../img/loader.gif"); */
+  /* background-repeat: no-repeat;
+  background-position: center; */
+  /* margin: -100px 0 0 -100px; */
+}
