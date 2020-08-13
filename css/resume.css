@@ -219,3 +219,12 @@ a:hover, a:focus, a:active {
 .badge{
     margin-left: 6px;
 }
+
+  .newsbox{
+    border-style: solid;
+    border-color: #d4d4d4;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+  }

@@ -1,5 +1,5 @@
 (function($) {
-  "use strict"; // Start of use strict
+  "use strict";
 
   $(window).on('load', function() {
     $('#status').fadeOut();
@@ -7,7 +7,6 @@
     $('body').delay(350).css({'overflow':'visible'});
   })
 
-  // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -21,14 +20,20 @@
     }
   });
 
-  // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
   });
 
-  // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#sideNav'
   });
   $('[data-toggle="popover"]').popover();
-})(jQuery); // End of use strict
+})(jQuery);
+
+$.get( 'https://raw.githubusercontent.com/pseudorandomized/pseudorandomized.github.io/master/news.yaml', function( data ) {
+        var obj1 = jsyaml.load( data );
+        console.log(obj1);
+        for (ns in obj1["news"]) {
+          document.getElementById("123").innerHTML += "<p>"+obj1["news"][ns]+"</p>";
+        }
+    });
