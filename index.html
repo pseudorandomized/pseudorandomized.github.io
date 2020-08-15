@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Theme based on Start Bootstrap resume template (https://startbootstrap.com/themes/resume/) -->
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Personal Webpage">
   <meta name="author" content="Antonis Antonopoulos">
+  <meta name="keywords" content="Antonis Antonopoulos, Personal Site, Theoretical Computer Science, Computational Complexity">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174242000-1"></script>
   <script>
@@ -126,37 +129,56 @@
           <li>Uniform Derandomization of Complexity Classes</li>
           <li>Algorithmic Information Theory</li>
           <li>Algorithmics on SLP-Compressed Strings
-            <a href="https://www.slideshare.net/AntonisAntonopoulos1/algorithmics-on-slpcompressed-strings" target="_blank"><span class="badge badge-pill badge-secondary">Slides</span></a>
+            <span type="button" class="badge badge-pill badge-secondary" onclick="showmodal('https://www.slideshare.net/slideshow/embed_code/key/tlg0SRl3RJINXj')" data-toggle="modal" data-target="#ModalCenter">Slides</span>
           </li>
           <li>Complexity of Approximate Counting</li>
           <li>Well Quasi-Ordering and Induced Subgraphs (<i>Just Treewidth in Athens '13</i>)
-            <a href="https://www.slideshare.net/AntonisAntonopoulos1/induced-subgraphs" target="_blank"><span class="badge badge-pill badge-secondary">Slides</span></a>
+            <span type="button" class="badge badge-pill badge-secondary" onclick="showmodal('https://www.slideshare.net/slideshow/embed_code/key/y3PO3svFcWFoFs')" data-toggle="modal" data-target="#ModalCenter">Slides</span>
           </li>
         </ul>
 
         <div class="subheading mb-3 mt-5">Computational Complexity Course Slides</div>
 
-        <ul>
+        <ul class="list-arrows">
           <li>Full Version</li>
 
           <li>Per Chapter Version:
             <ul class="list-arrows">
-              <li>Introduction - Turing Machines - Undecidability <a href="https://www.slideshare.net/AntonisAntonopoulos1/computational-complexity-introductionturing-machinesundecidability" target="_blank"><span
-                    class="badge badge-pill badge-secondary">Slides</span></a></li>
-              <li>Complexity Classes <a href="https://www.slideshare.net/AntonisAntonopoulos1/computational-complexity-complexity-classes" target="_blank"><span class="badge badge-pill badge-secondary">Slides</span></a></li>
-              <li>Oracles and the Polynomial Hierarchy <a href="https://www.slideshare.net/AntonisAntonopoulos1/computational-complexity-oracles-and-the-polynomial-hierarchy" target="_blank"><span
-                    class="badge badge-pill badge-secondary">Slides</span></a></li>
+              <li>Introduction - Turing Machines - Undecidability
+                <span type="button" class="badge badge-pill badge-secondary" onclick="showmodal('https://www.slideshare.net/slideshow/embed_code/key/wiqRfsLpTVhUVB')" data-toggle="modal" data-target="#ModalCenter">Slides</span>
+              </li>
+              <li>Complexity Classes
+                <span type="button" class="badge badge-pill badge-secondary" onclick="showmodal('https://www.slideshare.net/slideshow/embed_code/key/8JuJGTd3GYSYLs')" data-toggle="modal" data-target="#ModalCenter">Slides</span>
+              <li>Oracles and the Polynomial Hierarchy
+                <span type="button" class="badge badge-pill badge-secondary" onclick="showmodal('https://www.slideshare.net/slideshow/embed_code/key/supnLsAhFEUsFm')" data-toggle="modal" data-target="#ModalCenter">Slides</span>
+              </li>
               <li>The Structure of <b>NP</b></li>
               <li>Randomized Computation</li>
               <li>Non-Uniform Complexity</li>
               <li>Interactive Proofs</li>
               <li>Inapproximability</li>
               <li>Derandomization of Complexity Classes</li>
-              <li>Counting Complexity</li>
+              <li>Counting Complexity
+              </li>
               <li>Epilogue (<i>Parameterized Complexity - ETH/SETH - Fine-Grained Complexity</i>)</li>
             </ul>
           </li>
         </ul>
+
+        <!-- Modal -->
+        <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" id="mod-bod">
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="subheading mb-3 mt-5">Solved Exercises</div>
         <ul class="list-arrows">
@@ -166,7 +188,7 @@
     </section>
 
     <footer style="text-align: center;">
-      <p>&copy; Copyright Antonis Antonopoulos, 2019.&nbsp; All rights reserved.</p>
+      <p>&copy; Copyright Antonis Antonopoulos, 2019. <br> All rights reserved.</p>
     </footer>
   </div>
 
