@@ -249,3 +249,7 @@ a:hover, a:focus, a:active {
   content: "\27A4";
   margin: 0 10px 0 -28px;
 }
+
+.modal-content {
+  background-color: #d7d7d7;
+}
